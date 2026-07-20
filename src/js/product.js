@@ -1,5 +1,5 @@
 import ProductData from "./ProductData.mjs";
-import { setLocalStorage } from "./utils.mjs";
+import { setLocalStorage, loadHeaderFooter } from "./utils.mjs";
 
 const dataSource = new ProductData("tents");
 
@@ -39,4 +39,5 @@ async function init() {
     .addEventListener("click", addToCartHandler);
 }
 
+loadHeaderFooter();
 init();
